@@ -1,0 +1,10 @@
+.App {
+  font-family: sans-serif;
+  color: white;
+  text-align: center;
+  padding: 30px 100px;
+  margin: 30px 300px;
+  border: 1px solid #ed5e1a;
+  background: linear-gradient(rgb(228, 118, 0) 0%, rgb(247, 189, 2) 90%);
+  border-radius: 5px;
+}
