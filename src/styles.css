@@ -8,3 +8,6 @@
   background: linear-gradient(rgb(228, 118, 0) 0%, rgb(247, 189, 2) 90%);
   border-radius: 5px;
 }
+p {
+  margin: 20px 300px 0px;
+}

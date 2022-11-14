@@ -6,11 +6,25 @@ import CurrentWeather from "./CurrentWeather";
 
 export default function App() {
   return (
-    <div className="App">
-      <Form />
-      <WeatherDescription />
-      <CurrentTemp />
-      <CurrentWeather />
+    <div>
+      <div className="App">
+        <Form />
+        <WeatherDescription />
+        <CurrentTemp />
+        <CurrentWeather />
+      </div>
+      <p>
+        <a
+          href="https://github.com/jane-ovcharenko/weather-react"
+          target="_blank"
+        >
+          Open-source
+        </a>{" "}
+        code by{" "}
+        <a href="https://dazzling-moonbeam-551a6d.netlify.app/" target="_blank">
+          Jane Ovcharenko
+        </a>
+      </p>
     </div>
   );
 }
