@@ -6,8 +6,8 @@ import CurrentWeather from "./CurrentWeather";
 
 export default function App() {
   return (
-    <div className="container">
-      <div className="App">
+    <div className="App">
+      <div className="App-weather">
         <Form />
         <WeatherDescription />
         <CurrentTemp />

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./Form.css";
 
 export default function Form() {
   const [query, setQuery] = useState("");
@@ -15,9 +16,20 @@ export default function Form() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <input type="search" placeholder="Type your city" onChange={updateCity} />
-      <input type="Submit" value="Search" />
-      <h2>{message}</h2>
+      <div className="row">
+        <div className="col-9">
+          <input
+            type="search"
+            placeholder="Type your city"
+            autoFocus="on"
+            className="form-control"
+            onChange={updateCity}
+          />
+        </div>
+        <div className="col-3">
+          <input type="Submit" value="Search" className="btn btn-light" />
+        </div>
+      </div>
     </form>
   );
 }
