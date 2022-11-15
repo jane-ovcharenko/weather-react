@@ -1,5 +1,6 @@
 import "./styles.css";
 import Form from "./Form";
+import Date from "./Date";
 import WeatherDescription from "./WeatherDescription";
 import CurrentTemp from "./CurrentTemp";
 import CurrentWeather from "./CurrentWeather";
@@ -9,8 +10,9 @@ export default function App() {
     <div className="App">
       <div className="App-weather">
         <Form />
-        <WeatherDescription />
+        <Date />
         <CurrentTemp />
+        <WeatherDescription />
         <CurrentWeather />
       </div>
       <p>
