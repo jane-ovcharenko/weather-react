@@ -15,6 +15,7 @@ export default function WeatherInfo(props) {
       </div>
       <div className="WeatherDesc">
         <span className="text-capitalize">{props.info.description}</span>
+        <img src={props.info.iconUrl} alt={props.info.description} />
       </div>
       <div className="CurrentWeather">
         <span className="Humidity">💧{props.info.humidity}%</span>

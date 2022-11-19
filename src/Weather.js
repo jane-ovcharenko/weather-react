@@ -3,7 +3,7 @@ import axios from "axios";
 import WeatherInfo from "./WeatherInfo";
 import "./Weather.css";
 
-export default function Weather() {
+export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
 
@@ -15,8 +15,7 @@ export default function Weather() {
       humidity: response.data.temperature.humidity,
       wind: response.data.wind.speed,
       description: response.data.condition.description,
-      iconUrl:
-        "http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png",
+      iconUrl: `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`,
       city: response.data.city,
     });
   }
@@ -51,7 +50,7 @@ export default function Weather() {
               />
             </div>
             <div className="col-3">
-              <input type="Submit" value="Search" className="btn btn-light" />
+              <input type="submit" value="Search" className="btn btn-light" />
             </div>
           </div>
         </form>
