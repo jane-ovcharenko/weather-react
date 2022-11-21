@@ -8,12 +8,11 @@
   padding-top: 15px;
 }
 
-.Weather .Temperature {
+.Weather .WeatherTemperature {
   font-size: 100px;
 }
 
-.Weather .Temperature .CTemp,
-.FTemp {
+.Weather .WeatherTemperature .unit {
   font-size: 30px;
   position: relative;
   top: -50px;
