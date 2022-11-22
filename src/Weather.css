@@ -20,10 +20,12 @@
 
 .Weather .WeatherDesc {
   font-size: 30px;
-  padding-bottom: 20px;
+  position: relative;
+  top: -40px;
 }
 
 .Weather .CurrentWeather {
   font-size: 30px;
-  padding-bottom: 40px;
+  position: relative;
+  top: -40px;
 }
