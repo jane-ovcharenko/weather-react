@@ -21,7 +21,12 @@
 .Weather .WeatherDesc {
   font-size: 30px;
   position: relative;
-  top: -40px;
+  top: -50px;
+}
+
+.Weather canvas {
+  position: relative;
+  top: 20px;
 }
 
 .Weather .CurrentWeather {
